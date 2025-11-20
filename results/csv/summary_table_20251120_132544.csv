@@ -1,0 +1,16 @@
+Algorithm,Scenario,SuccessRate,AvgPathLength,AvgTime,AvgNodesExpanded
+
+Summary Statistics:
+Algorithm,Scenario,SuccessRate(%),AvgPathLength,AvgTime(ms),AvgNodesExpanded,AvgSmoothness
+AStar,maze,100.00,1393.6753,1.36,4388.0,3148.6612
+AStar,narrow_corridors,100.00,97.0000,0.04,97.0,301.5929
+AStar,obstacles,100.00,142.5513,1.20,3050.0,307.8761
+AStar,open_space,100.00,125.8650,0.06,89.0,276.4602
+AStarPS,maze,100.00,1393.6753,1.39,4388.0,1785.2100
+AStarPS,narrow_corridors,100.00,97.0000,0.06,97.0,0.0000
+AStarPS,obstacles,100.00,139.5678,1.19,3050.0,169.8985
+AStarPS,open_space,100.00,125.8650,0.08,89.0,0.0000
+ThetaStar,maze,100.00,1393.6753,4.82,4357.0,3129.8117
+ThetaStar,narrow_corridors,100.00,97.0000,0.34,97.0,301.5929
+ThetaStar,obstacles,100.00,149.3319,0.39,261.0,233.1790
+ThetaStar,open_space,100.00,125.8650,0.31,89.0,276.4602
