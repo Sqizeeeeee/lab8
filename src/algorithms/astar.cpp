@@ -13,16 +13,16 @@ AStar::AStar(Grid& grid)
     : grid_(grid), nodes_expanded_(0), path_length_(0.0) {}
 
 std::vector<Node*> AStar::findPath(int start_x, int start_y, int end_x, int end_y) {
-    // Сброс статистики и данных поиска
+    
     resetStatistics();
     grid_.resetSearchData();
     
-    // Проверка валидности координат
+    
     if (!grid_.isValidCoordinate(start_x, start_y) || !grid_.isValidCoordinate(end_x, end_y)) {
         throw std::runtime_error("Invalid start or end coordinates");
     }
     
-    // Проверка, что начальная и конечная точки доступны
+    
     Node& start_node = grid_.getNode(start_x, start_y);
     Node& end_node = grid_.getNode(end_x, end_y);
     
@@ -34,7 +34,7 @@ std::vector<Node*> AStar::findPath(int start_x, int start_y, int end_x, int end_
         throw std::runtime_error("End node is not walkable");
     }
     
-    // Инициализация начального узла
+    
     start_node.g_cost = 0.0;
     start_node.h_cost = start_node.calculateHeuristic(end_node);
     start_node.f_cost = start_node.g_cost + start_node.h_cost;
